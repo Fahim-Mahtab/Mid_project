@@ -1,3 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6347;
+}
+
+.container {
+    padding: 20px;
+    text-align: center;
+}
+
 
 .product-list {
     display: grid;
@@ -6,7 +46,7 @@
     padding: 20px;
 }
 
-.product-list .product {
+.product {
     border: 1px solid #ddd;
     padding: 15px;
     background-color: white;
@@ -14,7 +54,53 @@
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.product-list .product:hover {
+.product:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.discount {
+    text-decoration: line-through;
+    color: #888;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #ff6347;
+}
+
+#cart-items {
+    display: grid;
+    gap: 10px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+#cart-items p {
+    margin: 0;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#total-price {
+    font-weight: bold;
+    color: #ff6347;
 }
