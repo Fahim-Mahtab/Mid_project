@@ -26,7 +26,7 @@ function loadCart() {
     totalPriceElement.textContent = totalPrice;
 }
 
-// Load cart when the cart page is opened
+
 if (window.location.pathname.includes('cart.html')) {
     loadCart();
 }
